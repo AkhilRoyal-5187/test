@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    background-color: #fff;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+
+.row{
+    width: 100%;
+    max-width: 1140px;
+    margin-right: 50px;
+    gap: 30px;
+    
+
+}
+.row1{
+    margin-top: 20px;
+    display: flex;
+    margin-right: 50px;
+
+    
+}
+
+header{
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/fpbg.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+h1{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.hero-text-box{
+    position:absolute;
+    width: 100%;
+    max-width: 1140px;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.btn:link,
+.btn:visited
+{
+    padding: 15px 15px;
+    color: #fff;
+    display: inline-block;
+    
+    border-radius: 12px;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.9s, border 0.9s, color 0.5s;
+    
+}
+.btn-full:visited,
+.btn-full:link
+{
+    background-color:rgb(230, 117, 26) ;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.btn-ghost:visited,
+.btn-ghost:link
+{
+    border: 2px solid rgb(230, 117, 26);
+    color: #fff;
+    
+}
+.btn:hover,
+.btn:active,
+input[type = "button"]{
+    background-color: #cf6d17;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+.logo-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-top: 25px;
+}
+
+.main-nav{
+    margin-top: 60px;
+    float: right;
+    list-style: none;
+}
+.main-nav li{
+    display: inline;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 8px 0px;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover{
+    border-bottom: 3px solid #cf6d17;
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+    
+}
+
+.section-features{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.long-copy{
+   text-align: center;
+   line-height: 150%;
+   padding-left: 12%;
+   margin-bottom: 100px;
+   
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #cf6d17;
+    content: "";
+    width: 100px;
+    margin: 2% auto;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 270px;
+    margin-bottom: 10%;
+}
+.row2{
+    margin-top: 550px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    
+    
+}
+.col{
+    margin-right: 5%;
+}
+
+.big{
+    font-size: 350%;
+    margin-bottom: 10%;
+    display: block;
+    color: #cf6d17;
+}
+
+
+.section-meals{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.food-img{
+    width: 25%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+.food-img img{
+    transform: scale(1);
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    
+}
+
+.food-img img:hover{
+    
+    transform: scale(1.1);
+    opacity: 1;
+    transition: transform 0.8s, opacity 0.8s;
+
+}
+
+.city-head{
+    margin-top: 100px;
+}
+
+.section-steps{
+    position: relative;
+    margin-top: 400px;
+}
+
+.how-it-works{
+    padding-left: 80px;
+}
+.span_1_of_2 {
+	width: 49.2%;
+    
+
+}
+.sec3{
+    display: flex;
+}
+.phone-img{
+    width: 60%;
+    padding-left: 40px ;
+}
+
+.icon{
+    color: #cf6d17;
+    font-size: x-large;
+    font-weight: 800;
+    line-height: 50px;
+    
+}
+
+.location-section{
+    display: flex;
+    gap: 5%;
+}
+.city-info a{
+    text-decoration: none;
+    
+}
+.city-info a:hover{
+    color: #cf6d17;
+    text-decoration: underline;
+    transition: text-decoration-color 1s;
+
+}
+.city-info ion-icon{
+    color: #cf6d17;
+    font-weight: 500;
+}
+
+.city-name{
+    line-height: 2.3;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.city-info{
+    line-height: 1.7;
+}
+.sec4 img{
+    width: 100%;
+    display: block;
+    height: auto;
+    
+    border-radius: 10px;
+}
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+.steps{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.download-img{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.span{
+    margin-top: 100px;
+}
+
+.review-head{
+    margin-top: 100px;
+    
+}
+.review-img{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.review-img img{
+    width: 15%;
+    border-radius: 20%;
+}
+.testimonials{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/home/atai/Desktop/f-end/foodproject/resources/css/img/back-customers.jpg);
+}
+.review-img p{
+    font-style: italic;
+}
+.plans-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.plans{
+    color: black;
+    margin-top: 0;
+    background-color: #f8f8f8;
+    margin-left: 4%;
+    line-height: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+ 
+}
+.plan-btn{
+    color: black;
+    text-align: center;
+    background-color: #cf6d17;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 20px;
+    width: 35%;
+    text-decoration: none;
+    font-size: 150%;
+    transition: background-color 0.8s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.plan-btn:hover{
+    background-color: #fff;
+    border-color: #cf6d17;
+    border: 2px solid;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: bold;
+    color: black; 
+}
+
+.feedback-section{
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.feedback-section div{
+    position: relative;
+    width: 60%;
+}
+
+.feedback-section div label{
+    width: 40%;
+    position: absolute;
+    margin-left: 10%;
+}
+
+.feedback-section div input{
+    width: 65%;
+    margin-bottom: 3%;
+    margin-left: 60%;
+}
+
+.feedback-section div textarea{
+    width: 40%;
+    margin-bottom: 3%;
+    margin-left: 60%;
+}
+.feedback-section div select{
+    width: 30%;
+    
+    margin-left: 60%;
+    margin-bottom: 3%;
+}
+
+.form-class{
+    margin: 0 auto;
+    padding-left: 20%;
+}
+.footer-info{
+    
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    color: #cf6d17;
+}
+.footer-info div ul{
+    display:flex;
+    margin-left: 10%;
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 10%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-info div ul li{
+    background-color:#333;
+    margin-left: 5%;
+    
+}
+
+.footer-info div ul li:hover{
+    background-color: #f8f8f8;   
+    border-radius: 12%; 
+}
