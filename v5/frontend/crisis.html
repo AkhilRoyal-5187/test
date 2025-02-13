@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Report</title>
+    <link rel="stylesheet" href="crisis.css">
+</head>
+<body>
+    <!-- Form Section -->
+    <div class="left-div">
+        <h2>Crisis Report Form</h2>
+        <form id="crisis-form">
+            <label for="crisis-cause">Crisis Type</label>
+            <select id="crisis-cause" class="just">
+                <option value="">Select Crisis</option>
+                <option value="Fire">Fire</option>
+                <option value="Flood">Flood</option>
+                <option value="Earthquake">Earthquake</option>
+            </select>
+
+            <label for="Location">Location</label>
+            <input type="text" id="Location" class="just" placeholder="Enter Location">
+
+            <label for="severity-level">Severity</label>
+            <select id="severity-level" class="just">
+                <option value="">Select Severity</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description" class="just" placeholder="Describe the crisis"></textarea>
+
+            <button type="submit" id="submit-btn">Submit Report</button>
+        </form>
+    </div>
+
+    <!-- Reports Display Section -->
+    <div class="right-div">
+        <h2>Crisis Reports</h2>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label>Filter by Crisis Type:</label>
+            <select id="filter-crisis">
+                <option value="">All</option>
+                <option value="Fire">Fire</option>
+                <option value="Flood">Flood</option>
+                <option value="Earthquake">Earthquake</option>
+            </select>
+
+            <label>Filter by Severity:</label>
+            <select id="filter-severity">
+                <option value="">All</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+
+        <!-- Table for Displaying Reports -->
+        <table id="reports-table">
+            <thead>
+                <tr>
+                    <th>Crisis Type</th>
+                    <th>Location</th>
+                    <th>Severity</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="reports-body">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="crisis.js"></script>
+</body>
+</html>
